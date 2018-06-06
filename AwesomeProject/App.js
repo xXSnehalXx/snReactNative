@@ -1,6 +1,6 @@
 import React , { Component } from 'react';
 import { View ,Text ,Image ,Button } from 'react-native';
-
+import ErrorBoundary from './errorboundary.js';
 // export default class HelloWorld extends Component {
 //   render(){
 //     let pic = {
@@ -26,6 +26,7 @@ import { View ,Text ,Image ,Button } from 'react-native';
 class Blink extends Component{
   
   render(){
+    return new error('NOOOO BROO');
     return(
       <Text>{this.props.text}</Text>
     );
@@ -57,10 +58,12 @@ class BlinkBlink extends Component{
   render(){
     let text = (
     <View style={{alignContent:'center',flexDirection:'row',overflow:'scroll',flexWrap:'wrap'}}>
-      <Blink text="f"/>
-      <Blink text="u"/>
+      <ErrorBoundary>
+        <Blink text="f"/>
+      </ErrorBoundary>
+      {/* <Blink text="u"/>
       <Blink text="c"/>
-      <Blink text="k"/>
+      <Blink text="k"/> */}
     </View>
   );
   let display = this.state.isShowingText?text:(<Text></Text>);

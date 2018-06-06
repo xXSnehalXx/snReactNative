@@ -1,5 +1,5 @@
 import React , { Component } from 'react';
-import { View ,Text ,Image ,Button, StyleSheet ,Platform ,TextInput , 
+import { View ,Text ,Image ,Button, StyleSheet ,Platform ,TextInput ,
   TouchableHighlight ,Alert,ScrollView} from 'react-native';
 import ErrorBoundary from './errorboundary.js';
 class HelloWorld extends Component {
@@ -16,22 +16,22 @@ class HelloWorld extends Component {
     let pic = {
       uri:"https://image.redbull.com/rbcom/052/2017-02-23/1e56f938-5932-4164-8b9d-d3d4f069d9be/0001/1/1024/1/mick-corbett-taking-the-drop-at-nazare.jpg",
     };
-      
-    return(  
+
+    return(
      <View style = {{flex:1,marginTop:(Platform.OS=='ios'?21:24)}}>
         <View style={{flex:1, backgroundColor: '#2B59C3',flexDirection:'row'}}>
             <View style = {{
               flex:1 , 
               backgroundColor:'#F8F0FB',
               margin:2
-            }}> 
+            }}>
             <TouchableHighlight onPress={this._onPressButton}>
               <Text>HEY</Text>
             </TouchableHighlight>
 
             </View>
           <View style = {{
-            flex:5 , 
+            flex:5 ,
             backgroundColor:'#EBBAB9',
             margin:2,
             alignItems:'center',
@@ -45,17 +45,17 @@ class HelloWorld extends Component {
         placeholder='Type here'
         underlineColorAndroid='transparent'
         />
-          </View>
-          <View style = {{
-            flex:1 , 
-            backgroundColor:'#F8F0FB',
-            margin:2
-          }}/>
         </View>
+            <View style = {{
+                flex:1 ,
+                backgroundColor:'#F8F0FB',
+                margin:2
+            }}/>
+            </View>
         <View style={{flex:10, backgroundColor: '#F5DBCB'}} >
             <ScrollView>
             <View style = {{
-              flex:1 , 
+              flex:1 ,
               height:100,
               width:100,
               backgroundColor:'#F8F0FB',
@@ -68,28 +68,7 @@ class HelloWorld extends Component {
               margin:2
             }}/>
             <View style = {{
-              flex:1 , 
-              height:100,
-              width:100,
-              backgroundColor:'#F8F0FB',
-              margin:2
-            }}/>
-            <View style = {{
-              flex:1 , 
-              height:100,
-              width:100,
-              backgroundColor:'#F8F0FB',
-              margin:2
-            }}/>
-            <View style = {{
-              flex:1 , 
-              height:100,
-              width:100,
-              backgroundColor:'#F8F0FB',
-              margin:2
-            }}/>
-            <View style = {{
-              flex:1 , 
+              flex:1 ,
               height:100,
               width:100,
               backgroundColor:'#F8F0FB',
@@ -98,7 +77,28 @@ class HelloWorld extends Component {
             <View style = {{
               flex:1 ,
               height:100,
-              width:100, 
+              width:100,
+              backgroundColor:'#F8F0FB',
+              margin:2
+            }}/>
+            <View style = {{
+              flex:1 ,
+              height:100,
+              width:100,
+              backgroundColor:'#F8F0FB',
+              margin:2
+            }}/>
+            <View style = {{
+              flex:1 ,
+              height:100,
+              width:100,
+              backgroundColor:'#F8F0FB',
+              margin:2
+            }}/>
+            <View style = {{
+              flex:1 ,
+              height:100,
+              width:100,
               backgroundColor:'#F8F0FB',
               margin:2
             }}/>
@@ -106,27 +106,27 @@ class HelloWorld extends Component {
         </View>
         <View style={{flex:1, backgroundColor: '#2B59C3',flexDirection:'row'}}>
           <View style = {{
-              flex:1 , 
+              flex:1 ,
               backgroundColor:'#F8F0FB',
               margin:2
             }}/>
             <View style = {{
-            flex:1 , 
+            flex:1 ,
             backgroundColor:'#F8F0FB',
             margin:2
           }}/>
           <View style = {{
-            flex:1 , 
+            flex:1 ,
             backgroundColor:'#F8F0FB',
             margin:2
           }}/>
           <View style = {{
-            flex:1 , 
+            flex:1 ,
             backgroundColor:'#F8F0FB',
             margin:2
           }}/>
           <View style = {{
-            flex:1 , 
+            flex:1 ,
             backgroundColor:'#F8F0FB',
             margin:2
           }}/>
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
 })
 
 // class Blink extends Component{
-  
+
 //   render(){
 //     return(
 //       <Text>{this.props.text}</Text>
@@ -204,7 +204,7 @@ const styles = StyleSheet.create({
 //           onPress = {this.handleClick}
 //           title='Toggle'
 //           />
-//         </View> 
+//         </View>
 //       </View>
 //     );
 //   }
@@ -217,4 +217,3 @@ export default class App extends Component{
     );
   }
 }
-
