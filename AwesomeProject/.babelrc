@@ -1,8 +1,0 @@
-{
-  "presets": ["flow"],
-  "env": {
-    "development": {
-      "plugins": ["transform-react-jsx-source"]
-    }
-  }
-}
